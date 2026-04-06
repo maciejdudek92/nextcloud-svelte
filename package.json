@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "watch": "vite build --watch"
+    "watch": "vite build --watch",
+    "deploy": "npm run build && tar -czvf my_svelte_app.tar.gz . --exclude='node_modules' --exclude='.git'"
   },
   "devDependencies": {
     "@nextcloud/typings": "^1.4.3",
