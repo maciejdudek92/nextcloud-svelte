@@ -1,5 +1,10 @@
 <script lang="ts">
     let title: string = "Panel Kontrolny Svelte";
+    import { getCurrentUser } from "@nextcloud/auth";
+    import { generateUrl } from "@nextcloud/router";
+
+    const user = getCurrentUser();
+    const url = generateUrl("/apps/my_app/endpoint");
 </script>
 
 <div class="tw-p-6 tw-bg-nc-main tw-min-h-screen">
@@ -10,6 +15,7 @@
     </h1>
 
     <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-4 tw-mt-6">
+        <p>Zalogowany jako: {user}</p>
         <div
             class="tw-bg-white tw-shadow-md tw-rounded-lg tw-p-4 tw-border tw-border-gray-200"
         >

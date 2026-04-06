@@ -18,5 +18,9 @@
     "tslib": "^2.8.1",
     "typescript": "^5.9.3",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@nextcloud/auth": "^2.0.0",
+    "@nextcloud/router": "^2.0.0"
   }
 }
