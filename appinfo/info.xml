@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>nextcloud-svelte</id>
+    <name>Svelte project template for N EXTCLOUD</name>
+    <summary>Modern Boilerplate with Svelte</summary>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Maciej Dudek</author>
+    <namespace>NextcloudSvelte</namespace>
+    <category>organization</category>
+    <dependencies>
+        <nextcloud min-version="32" max-version="100" />
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Start</name>
+            <route>nextcloud-svelte.page.index</route>
+            <icon>app.svg</icon>
+        </navigation>
+    </navigations>
+</info>
